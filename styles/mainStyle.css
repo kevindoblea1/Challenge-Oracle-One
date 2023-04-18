@@ -1,0 +1,28 @@
+:root {
+    /*---Colors---*/
+    --bg-color: #0a3871;
+    --color-alert: #072b61;
+    --color-light: #eff1fa;
+    --text-color: #0a3871;
+    --text-color-light: #343a40;
+    --text-color-lighten: #495057;
+    --body-color: #f3f5fc;
+    --container: #fff;
+    
+    /*---Fonts and typography---*/
+    --body-font: "Inter", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    
+    /*---Fonts wight---*/
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
