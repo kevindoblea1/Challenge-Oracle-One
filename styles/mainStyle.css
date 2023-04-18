@@ -8,7 +8,7 @@
     --text-color-lighten: #495057;
     --body-color: #f3f5fc;
     --container: #fff;
-    
+
     /*---Fonts and typography---*/
     --body-font: "Inter", sans-serif;
     --h1-font-size: 1.5rem;
@@ -17,7 +17,7 @@
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
-    
+
     /*---Fonts wight---*/
     --font-extra-light: 200;
     --font-light: 300;
@@ -25,4 +25,97 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+button,
+textarea {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+}
+
+button,
+textarea {
+    border: none;
+}
+
+.container {
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 3rem;
+}
+
+.main-Logo {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 5rem;
+    background-color: var(--body-color);
+    z-index: 100;
+}
+
+.logo_img {
+    width: 50px;
+    height: 50px;
+    object-fit: scale-down;
+}
+
+.input {
+    margin-bottom: 2rem;
+}
+
+.input_text {
+    width: 100%;
+    color: var(--bg-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    resize: none;
+}
+
+.input_text:focus {
+    outline: none;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--text-color-lighten);
+}
+
+.info__img {
+    margin-right: 0.5rem;
+}
+
+.info__text {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.buttons {
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.button__encrypt,
+.button__decrypt,
+.button__copy {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--first-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
 }
