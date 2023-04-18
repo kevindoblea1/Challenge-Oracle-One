@@ -2,6 +2,10 @@
 
 Este proyecto es parte del primer challenge del curso Oracle One Next Education, el reto consiste en realizar un encriptador, cumpliendo las siguientes caracteristicas:
 
+## Modelo figma:
+[![Esta es una imagen de ejemplo](https://i.imgur.com/NFYhDAq.png)](https://i.imgur.com)
+
+
 
 ## Clonar el Repositorio
 
@@ -28,3 +32,4 @@ Esta página está configurada para ser desplegada en GitHub Pages. Sigue estos 
 6. Una vez que el despliegue esté completo, encontrarás la URL de tu página publicada en la sección "GitHub Pages" de la configuración de tu repositorio.
 
 ¡Listo! Ahora tu página HTML está desplegada en GitHub Pages y puedes acceder a ella a través de la URL proporcionada.
+
