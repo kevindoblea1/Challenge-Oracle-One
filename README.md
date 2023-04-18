@@ -12,7 +12,7 @@ Para clonar este repositorio y obtener una copia local en tu máquina, sigue est
 3. Ejecuta el siguiente comando:
 
 ```bash
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+git clone https://github.com/kevindoblea1/Challenge-Oracle-One
 ```
 Esto creará una copia local del repositorio en tu máquina.
 
