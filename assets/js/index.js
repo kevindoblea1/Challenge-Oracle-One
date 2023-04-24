@@ -10,7 +10,7 @@ btnEncriptar.addEventListener('click', function(){
     const textoIngresado = document.getElementById('input__text').value.trim();
     
     if(!textoIngresado) {
-    return toastAlert("Ingrese un texto a encriptar", "#ea580c");
+        return toastAlert("Ingrese un texto a encriptar", "#ea580c");
     }
     
     const validarResultado = validarInput(textoIngresado);
@@ -23,6 +23,29 @@ btnEncriptar.addEventListener('click', function(){
     }
     document.getElementById('input__text').value = "";
 })
+btnDesencriptar.addEventListener('click', function(){
+    const textoIngresado = document.getElementById('input__text').value.trim();
+    
+    if(textoIngresado.length === 0) {
+        return toastAlert("Ingrese texto a desencriptar", "#ea580c");
+    }
+    
+    ocultarMensaje()
+    
+    document.getElementById('input__text--encrypt').value = desencriptarMensaje(textoIngresado)
+    document.getElementById('input__text').value = "";
+});
+
+
+function desencriptarMensaje (cadena) {
+    return cadena
+    .replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ai/g, "a")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u")
+}
+
 
 function encriptarMensaje(cadena) {
     const equivalencia = {
@@ -51,7 +74,7 @@ function validarInput(cadena) {
 
 function toastAlert(mensaje, color) {
     const toastAlert = document.getElementById('toastAlert');
-    toastAlert.innerHTML = `<p class"toastAlert" style="background-color: ${color};" " ${mensaje}</p>`;
+    toastAlert.innerHTML = `<p class"toastAlert" style="background-color: ${color};">${mensaje}</p>`;
     toastAlert.clasList.add("activeAnimation");
     setTimeout(() => {
         toastAlert.clasList.remove("activeAnimation");
@@ -60,3 +83,7 @@ function toastAlert(mensaje, color) {
     }, 800);
     }, 3200);
 }
+btnCopiar.addEventListener('click', function () {
+    const textCopy = document.getElementById('input__text--encrypt').value.trim();
+    navigator.clipboard.writeText(textCopy);
+});
