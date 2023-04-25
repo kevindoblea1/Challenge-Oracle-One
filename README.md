@@ -33,3 +33,7 @@ Esta página está configurada para ser desplegada en GitHub Pages. Sigue estos 
 
 ¡Listo! Ahora tu página HTML está desplegada en GitHub Pages y puedes acceder a ella a través de la URL proporcionada.
 
+## Badge del Challenge
+<br>
+  <img height="500em" src="https://i.imgur.com/YwD6ias.png" -->
+<br> 
