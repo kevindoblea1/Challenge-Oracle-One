@@ -33,7 +33,7 @@ Esta página está configurada para ser desplegada en GitHub Pages. Sigue estos 
 
 ¡Listo! Ahora tu página HTML está desplegada en GitHub Pages y puedes acceder a ella a través de la URL proporcionada.
 
-Sitio desplegado: [Challenge One](https://pages.github.com/](https://kevindoblea1.github.io/Challenge-Oracle-One))
+Sitio desplegado: [Challenge One](https://kevindoblea1.github.io/Challenge-Oracle-One)
 
 ## Badge del Challenge
 <br>
